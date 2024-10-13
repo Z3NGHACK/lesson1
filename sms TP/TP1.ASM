@@ -1,0 +1,5 @@
+Start:
+;RED||AMBER
+MOV AL, D0
+OUT 01
+END

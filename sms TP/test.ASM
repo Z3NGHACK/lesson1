@@ -1,0 +1,5 @@
+TEST01:
+MOV BL, DD
+MOV AL, FC, [BL]
+OUT 02
+END

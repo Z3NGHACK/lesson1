@@ -1,0 +1,7 @@
+Start:
+;RED||AMBER
+MOV AL, 84
+MOV BL, 48
+MOV CL, 30
+OUT 01
+END
