@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment09</title>
+    <link rel="stylesheet" href="style03.css" type="text/css">
+    <!--Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--BootStrap-->
+    <!-- <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"> -->
+</head>
+<body>
+<section>
+    <h3>To-do List with SessionStorage</h3>
+    <nav>
+        <div class="task_title">
+            <h4>Task title</h4>
+            <input placeholder="Title" id="title" type="text">
+        </div>
+        <div class="task_assignee">
+            <h4>Assignee</h4>
+            <input placeholder="John" id="assign" type="text">
+        </div>
+        <div class="task_date">
+            <h4>Deadline</h4>
+            <input id="date" type="date">
+        </div>
+        <div id="add_btn">
+            Add
+        </div>
+    </nav>
+
+    <main class="list">
+        <div class="task">
+            <div class="tTitle">
+                Create a project
+            </div>
+            <div class="tAssign">
+                Tola
+            </div>
+            <div class="tDate">
+                24/2/2022
+            </div>
+            <div class="remove">
+                <i class="ri-delete-bin-line"></i>
+            </div>
+        </div>
+    </main>
+</section>
+<script>
+    class ToDoList{
+        constructor(){
+            this.add = document.getElementById("add_btn");
+
+            if(this.add){
+                this.add.addEventListener('click', ()=>{
+                    this.addTask();
+                })
+            }
+
+            document.querySelector('.list').addEventListener('click', (event)=>{
+                if(event.target.classList.contains('ri-delete-bin-line')){
+                    this.removeTask(event.target.closest('.task'));
+                }
+            })
+
+        }
+        addTask(){
+            let title = document.getElementById("title").value;
+            let assign = document.getElementById("assign").value;
+            let date = document.getElementById("date").value;
+
+            let list = document.querySelector(".list");
+            let newTask = document.createElement('div');
+            newTask.classList.add('task');
+            newTask.innerHTML = `
+                    <div class="tTitle">
+                        ${title}
+                    </div>
+                    <div class="tAssign">
+                        ${assign}
+                    </div>
+                    <div class="tDate">
+                        ${date}
+                    </div>
+                    <div class="remove">
+                        <i class="ri-delete-bin-line"></i>
+                    </div>
+                `
+            list.appendChild(newTask);
+
+            document,getElementById("title").value = "";
+            document,getElementById("assign").value = "";
+            document,getElementById("date").value = "";
+        }
+        removeTask(task){
+            task.remove();
+        }
+    }
+
+    // Initialize ToDoList
+    new ToDoList();
+</script>
+
+</body>
+</html>

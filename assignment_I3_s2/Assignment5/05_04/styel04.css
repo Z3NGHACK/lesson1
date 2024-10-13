@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.parent1{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.parent1 .child1{
+    height: 193px;
+    width: 60px;
+    background: orange;
+    margin: 3px
+}
+.parent1 .child2{
+    height: 193px;
+    width: 60px;
+    background: orange;
+    margin: 3px
+}
+.parent1 .child3{
+    height: 193px;
+    width: 60px;
+    background: orange;
+    margin: 3px
+}
+.parent1 .child2 div{
+    width: 54px;
+    height: 60px;
+    margin: 3px;
+    background: green;
+}
+
+.parent2{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent2 .child1{
+    height: 60px;
+    width: 193px;
+    background: orange;
+    margin: 3px;
+}
+.parent2 .child2{
+    height: 60px;
+    width: 193px;
+    background: orange;
+    margin: 3px;
+    display: flex;
+}
+.parent2 .child3{
+    height: 60px;
+    width: 193px;
+    background: orange;
+    margin: 3px;
+}
+.parent2 .child2 div{
+    width: 65px;
+    height: 55px;
+    margin: 2px;
+    background: green;
+}
+
+.parent3{
+    background: gray;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.parent3 .child1{
+    margin: 2px;
+    width: 135px;
+    height: 193px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent3 .child1 .c1{
+    background: orange;
+    width: 140px;
+    height: 60px;
+}
+.parent3 .child1 .c2{
+    margin-top: 3px;
+    width: 140px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+
+}
+.parent3 .child1 .c2 .cs1{
+    width: 85px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent3 .child1 .c2 .cs1 div{
+    background: orange;
+    width: 85px;
+    margin: 1px;
+    height: 72px;
+}
+.parent3 .child1 .c2 .cs2{
+    margin-left: 3px;
+    background: orange;
+    width: 60px;
+    height: 130px;
+}
+.parent3 .child2{
+    background: orange;
+    margin-left: 4px;
+    width: 50px;
+    height: 193px;
+    display: flex;
+    flex-direction: column;
+}
+.parent3 .child2 .left{
+    background: green;
+    margin: 2px;
+    width: 46px;
+    height: 193px;
+    display: flex;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style01.css" type="text/css">
+        <title>Assignment09</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        </style>
+    </head>
+    <body>
+        <div id="counter">
+            <h3>Counter</h3>
+            <div id="num">0</div>
+            <div class="button">
+                <div id="decrease" class="btn">
+                    DECREASE
+                </div>
+                <div id="reset" class="btn">
+                    RESET
+                </div>
+                <div id="increase" class="btn">
+                    INCREASE
+                </div>
+            </div>
+        </div>
+
+        <script>
+            class Counter {
+                constructor() {
+                    this.counter = 0;
+                    this.countnum = document.getElementById("num");
+                    this.inc = document.getElementById("increase");
+                    this.dec = document.getElementById("decrease");
+                    this.res = document.getElementById("reset");
+
+               
+                    if (this.inc) {
+                        this.inc.addEventListener('click', () => {
+                            this.increase();
+                        });
+                    }
+
+               
+                    if (this.dec) {
+                        this.dec.addEventListener('click', () => {
+                            this.decrease();
+                        });
+                    }
+
+       
+                    if (this.res) {
+                        this.res.addEventListener('click', () => {
+                            this.reset();
+                        });
+                    }
+
+                    this.updateCounter();
+                }
+
+                increase() {
+                    this.counter++;
+                    this.updateCounter();
+                    if (this.counter > 0) {
+                        this.countnum.style.color = 'green';
+                    }
+                    if (this.counter == 0) {
+                        this.countnum.style.color = 'green';
+                    }
+                }
+
+                decrease() {
+                        this.counter--;
+                        this.updateCounter();
+                    if (this.counter < 0) {
+                        this.countnum.style.color = 'red';
+                    }
+                    
+                }
+
+                reset() {
+                    this.counter = 0;
+                    this.updateCounter();
+                        this.countnum.style.color = 'green';
+                    
+                }
+
+                updateCounter() {
+                    this.countnum.innerHTML = this.counter;
+                }
+            }
+
+            const counter = new Counter();
+        </script>
+        </body>
+</html>

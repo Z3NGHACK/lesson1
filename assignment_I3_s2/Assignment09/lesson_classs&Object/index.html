@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-80">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Class and Object
+        </title>
+        <!--Icon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link>
+    </head>
+    <body>
+        <div id="brand"></div>
+        <div id="type"></div>
+        <div id="color"> </div>
+        <div id="price"> </div>
+
+        <div id="left"> </div>
+        <div id="right"> </div>
+        <div id="stop"> </div>
+        <div id="forward"> </div>
+
+        <script>
+            class Vehicle{
+                constructor(brand, type){
+                    this.brand = brand;
+                    this.type = type;
+                    this.color = "black";
+                    this.price = 0;
+                    this.speed = 0;
+
+                }
+
+                forward(speed){
+                    speed++;
+                    console.log("Vehicle moving forward");
+                }
+                left(){
+                    console.log("Vehicle turning left");
+                }
+                right(){
+                    console.log("Vehicle turning right");
+                }
+                stop(){
+                    console.log("Vehicle stopping")
+                }
+            }
+
+            class Bicycle extends Vehicle{
+                constructor(brand, color, price, type){
+                    super(brand, type);
+                    this.color = color;
+                    this.price = price;
+                }
+
+                name(brand){
+                    brand = "Mountain Bike";
+                }
+            }
+            
+            class Motorcycle extends Vehicle{
+                constructor(brand, color, price, type){
+                    super(brand, type);
+                    this.color = color;
+                    this.price = price;
+                }
+
+                name(brand){
+                    brand = "Honda Motor";
+                }
+            }
+            class Car extends Vehicle{
+                constructor(brand, color, price, type){
+                    super(brand, type);
+                    this.color = color;
+                    this.price = price;
+                }
+
+                name(brand){
+                    brand = "Mercedes card";
+                }
+            }
+
+        </script>
+    </body>
+</html>

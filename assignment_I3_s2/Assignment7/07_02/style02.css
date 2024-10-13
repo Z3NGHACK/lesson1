@@ -1,0 +1,33 @@
+.wrapper1{
+    background: gray;
+    width: 400px;
+    height: 400px;
+    padding: auto;
+    position: relative;
+}
+.wrapper1 .flying-box{
+    align-items: center;
+    background: orange;
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper2{
+    background: gray;
+    width: 400px;
+    height: 400px;
+    padding: auto;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper2 .flying-box{
+    align-items: center;
+    background: orange;
+    position: absolute;
+    padding: 40px;
+}

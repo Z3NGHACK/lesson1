@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hori_btn{
+    border: 2px solid black;
+    width: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 10px;
+    display: inline-flex;
+}
+.hori_btn button{
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+.hori_btn .left{
+    border-radius: 5px 0 0 5px;
+}
+.hori_btn .right{
+    border-radius: 0 5px 5px 0;
+}
+
+.num_btn{ 
+    border: 2px solid black;
+    width: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 10px;
+    display: inline-flex;
+}
+.num_btn button{
+    background: white;
+    color: rgb(100, 100, 100);
+    padding: 10px 20px;
+    font-weight: 800;
+    border: 1px solid rgb(100, 100, 100);
+}
+.num_btn .one{ 
+    border-radius: 5px 0 0 5px;
+}
+
+.num_btn .four{
+    border-radius: 0 5px 5px 0;
+}
+.num_btn button:hover{
+    background: rgb(199, 199, 199);
+}
+
+.vert_btn{
+    height: 48vh;
+    border: 2px solid black;
+    width: 23vh;
+    padding: 30px
+}
+.vert_btn button{
+    display: block;
+    background: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+}
+.vert_btn .btn1{
+    border-radius: 5px 5px 0 0;
+}
+.vert_btn .btn2{
+    border-radius: 0 0 5px 5px;
+}
+.vert_btn button:hover{
+    background: #005fc5;
+}

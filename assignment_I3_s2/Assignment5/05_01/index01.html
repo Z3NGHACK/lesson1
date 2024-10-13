@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Assignment 05</title>
+        <link rel="stylesheet" href="style01.css" type="text/css">
+        <style>*{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+        }
+        .parent1{
+            background: rgb(177, 177, 177);
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: start;
+            margin: 20px;
+        }
+        .child1{
+            background: orange;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            color: white;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent2{
+            background: rgb(177, 177, 177);
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        .child2{
+            background: orange;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            color: white;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent3{
+            margin: 20px;
+            background: rgb(177, 177, 177);
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .child3{
+            background: orange;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            color: white;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 140px;
+            left: 140px;
+        }
+        
+        .parent4{
+            margin: 20px;
+            background: rgb(177, 177, 177);
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .child4{
+            background: orange;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            color: white;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+        
+        }</style>
+    </head>
+    <body>
+        <div class="parent1">
+            <div class="child1">
+                child
+            </div>
+        </div>
+        
+        <div class="parent2">
+            <div class="child2">
+                child
+            </div>
+        </div>
+        
+        <div class="parent3">
+            <div class="child3">
+                child
+            </div>
+        </div>
+        
+        <div class="parent4">
+            <div class="child4">
+                child
+            </div>
+        </div>
+    </body>
+</html>

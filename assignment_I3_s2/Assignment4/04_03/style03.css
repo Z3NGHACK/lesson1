@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 20px 0 0 20px;
+}
+
+input{
+    padding: 15px 5px;
+    color: rgb(161, 161, 161);
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+    margin: 10px 0;
+    width: 30vh;
+}
+
+.icon{
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+    margin: 10px 0;
+    width: 30vh;
+    
+}
+
+.icon input{
+    border: none;
+    width: 25vh;
+}
+
+.icon1 i, 
+.icon1 input{
+    font-size: large;
+}
+
+.icon3 i, 
+.icon3 input{
+    font-size: small;
+}
+
+.style .con input{
+    margin-right: -5px;
+    border-radius: 0;
+    padding: 15px 5px;
+}
+.style .con .in1{
+    border-radius: 5px 0 0 5px;
+}
+.style .con .in2{
+    border-radius:0 5px 5px 0;
+}
+
+.search input{
+    border: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 0;
+}
+.search a{
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px 0 0 5px;
+    padding: 14.5px 10px;
+    margin-right: -4px;
+}
+button{
+    height: 6.5vh;
+    margin-left: -5px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    width: 10vh;
+    font-size: 1rem;
+    color: #fff;
+    background: rgb(52, 94, 235);
+}
+
+.inb input{
+    border-radius: 5px 0 0 5px;
+    width: 50vh;
+}

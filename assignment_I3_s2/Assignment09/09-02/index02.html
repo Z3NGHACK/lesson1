@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment09</title>
+    <link rel="stylesheet" href="style02.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="random-color">
+        <h5>Random Color Generator</h5>
+        <div class="hero-section">
+            <div class="header">
+                <div>Background Color:</div>
+                <div id="color-num">#2336FB</div>
+            </div>
+
+            <div class="button">
+                <div id="generate">
+                    GENERATE
+                </div>
+                <div id="reset">
+                    RESET
+                </div>
+            </div>
+
+            <div class="color-section">
+                <div class="color">
+                    <span>#2336FB</span>
+                    <div></div>
+                </div>
+                <div class="color">
+                    <span>#497068</span>
+                    <div></div>
+                </div>
+                <div class="color">
+                    <span>#599F96</span>
+                    <div></div>
+                </div>
+                <div class="color">
+                    <span>#1544C7</span>
+                    <div></div>
+                </div>
+                <div class="color">
+                    <span>#3542AF</span>
+                    <div></div>
+                </div>
+                <div class="color">
+                    <span>#15FCA9</span>
+                    <div></div>
+                </div>
+                <div class="color">
+                    <span>#10EF55</span>
+                    <div></div>
+                </div>
+                <div class="color">
+                    <span>#722031</span>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class Color {
+            constructor() {
+                this.records = [];
+                this.generateButton = document.getElementById("generate");
+                this.resetButton = document.getElementById("reset");
+                this.colorSection = document.querySelectorAll(".color");
+                this.colorNum = document.getElementById("color-num");
+
+                this.generateButton.addEventListener('click', this.generate.bind(this));
+                this.resetButton.addEventListener('click', this.reset.bind(this));
+            }
+
+            generate() {
+                const colors = ['#2336FB', '#497068', '#599F96', '#1544C7', '#3542AF', '#15FCA9', '#10EF55', '#722031'];
+                const randomIndex = Math.floor(Math.random() * colors.length);
+                const randomColor = colors[randomIndex];
+                document.getElementById("random-color").style.backgroundColor =getRandomColor();
+                this.colorNum.textContent = getRandomColor();
+            }
+
+
+            getRandomColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            updateColorNum() {
+                const randomIndex = Math.floor(Math.random() * this.records.length);
+                this.colorNum.textContent = this.records[randomIndex];
+            }
+
+            reset() {
+                const defaultColor = '#2336FB';
+                document.getElementById("random-color").style.backgroundColor = defaultColor;
+                this.colorNum.textContent = defaultColor; // Reset color num to default
+                this.records = []; // Clear records
+            }
+
+        }
+
+        const colorGenerator = new Color();
+    </script>
+</body>
+</html>

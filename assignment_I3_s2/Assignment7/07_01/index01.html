@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style01.css" type="text/css">
+        <title>Assignment07</title>
+        <style>
+            *{
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    border: none;
+}
+.hero-contain{
+    width: 400px;
+    height: 300px;
+    background: gray;
+    margin: 50px;
+    padding: 0;
+    position: relative;
+    display: flex;
+}
+.hero-contain .left{ 
+    width: 100px;
+    height: 300px;
+    display: block;
+    padding: 0;
+    margin:0;
+    flex-wrap: wrap;
+}
+.hero-contain .left div{ 
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.hero-contain .right{
+    width: 300px;
+    height: auto;
+    background: blue;
+    display: block;
+}
+.hero-contain .right .top{
+    background: rgb(250, 119, 255);
+    width: 300px;
+    height:100px;
+    border: 0px solid black;
+}
+.hero-contain .right .bottom{
+    display: flex;
+    background: rgb(250, 119, 255);
+    width: 300px;
+    height: 200px;
+}
+.hero-contain .left .one{
+    background: greenyellow;
+}
+.hero-contain .left .two{
+    background: rgb(125, 196, 255);
+}
+.hero-contain .left .three{
+    background: rgb(234, 255, 43);
+}
+.hero-contain .right .one{
+    background: greenyellow;
+    width: 300px;
+    height: 200px;
+}
+.hero-contain .right .two{
+    background: rgb(125, 196, 255);
+    width: 300px;
+    height: 200px;
+}
+.hero-contain .right .three{
+    background: rgb(234, 255, 43);
+    width: 300px;
+    height: 200px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="hero-contain">
+            <div class="left">
+                <div class="one"></div>
+                <div class="two" ></div>
+                <div class="three"></div>
+            </div>
+            <div class="right">
+                <div class="top"></div>
+                <div class="bottom">
+                    <div class="one"></div>
+                    <div class="two" ></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

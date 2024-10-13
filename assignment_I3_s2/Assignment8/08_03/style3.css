@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    box-sizing: none;
+}
+
+body{
+    margin: 50px;
+    border: 2px solid black;
+    padding: 50px;
+    width: 500px;
+
+}
+
+#header{
+    color: rgb(74, 72, 88);
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header h1{
+    position: relative;
+}
+
+#header .line1{
+    position: relative;
+    height: 3px;
+    width: 50px;
+    background-color: rgb(255, 168, 6);
+}
+
+#content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+#content button{ 
+    padding: 3px 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: outset 2px;
+    border-color: rgb(255, 178, 34);
+    color:rgb(255, 178, 34);
+    font-weight: 100;
+}
+
+.body{
+    display: flex;
+    margin-bottom: 30px;
+}
+img{
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 178, 34);
+}
+.body .des{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.body .des .head{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 100;
+    position: relative;
+}
+.body .des .head span{
+    color: rgb(255, 178, 34);
+    position: absolute;
+    right: 0;
+    font-size: 0.8rem;
+}
+.des .line2{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    margin: 5px 0 10px 0;
+}
+.des p{
+    color: rgb(110, 110, 110);
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+@media (max-width: 530px){
+    body{
+        width: 400px;
+    }
+    .body{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

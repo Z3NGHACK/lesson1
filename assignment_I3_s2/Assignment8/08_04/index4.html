@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style4.css" type="text/css">
+        <title>Assignment08</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <div class="header">NAV-BAR</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="icon">
+                <a><i class="ri-facebook-circle-fill"></i></a>
+                <a><i class="ri-twitter-fill"></i></a>
+                <a><i class="ri-behance-fill"></i></a>
+                <a><i class="ri-linkedin-box-fill"></i></a>
+                <a><i class="ri-vip-diamond-fill"></i></a>
+            </div>
+            <div id="ham">
+                <a><i class="ri-menu-line"></i></a>
+            </div>
+            <div id="ham2">
+                <a><i class="ri-menu-line"></i></a>
+            </div>
+        </div>
+
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <script>
+            let menu1 = document.getElementById("ham");
+            let menu2 = document.getElementById("ham2");
+            let dis = document.getElementById("menu");
+
+            if(menu1){
+                menu1.addEventListener('click', () =>{
+                    dis.style.display = 'flex';
+                    menu1.style.display = 'none';
+                    menu2.style.display = 'flex';
+                })
+            }
+            if(menu2){
+                menu2.addEventListener('click', () =>{
+                    dis.style.display = 'none';
+                    menu1.style.display = 'flex';
+                    menu2.style.display = 'none';
+                })
+            }
+        </script>
+    </body>
+</html

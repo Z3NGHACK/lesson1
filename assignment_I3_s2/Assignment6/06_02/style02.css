@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+}
+body {
+    display: flex;
+}
+.parent1{
+    width: 200px;
+    height: 200px;
+    background: gray;
+    margin: 80px;
+    display: flex;
+    position: relative;
+}
+.parent1 .child{
+    background: orange;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    left: -25%;
+    translate: 25%, -25%;
+}
+.parent2{
+    width: 200px;
+    height: 200px;
+    background: gray;
+    margin: 80px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.parent2 .child{
+    background: orange;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -25%;
+    left: 25%;
+    translate: 25%, -25%;
+}

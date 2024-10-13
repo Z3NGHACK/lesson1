@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style5.css" type="text/css">
+        <title>Assignment08</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        </style>
+    </head>
+    <body>
+        <div id="side-bar">
+            <div class="head">
+                <h3>SIDE-BAR</h3>
+                <div id="close">+</div>
+            </div>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Projects</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+            <div class="icon">
+                <a><i class="ri-facebook-circle-fill"></i></a>
+                <a><i class="ri-twitter-fill"></i></a>
+                <a><i class="ri-behance-fill"></i></a>
+                <a><i class="ri-linkedin-box-fill"></i></a>
+                <a><i class="ri-vip-diamond-fill"></i></a>
+            </div>
+        </div>
+        <div id="ham">
+            <a><i class="ri-menu-line"></i></a>
+        </div>
+
+        <script>
+            let ham = document.getElementById("ham");
+            let close= document.getElementById("close");
+            let side = document.getElementById("side-bar");
+
+            if(ham){
+                ham.addEventListener('click', ()=>{
+                    side.classList.add('open');
+                })
+            }
+            if(close){
+                close.addEventListener('click', ()=>{
+                    side.classList.remove('open');
+                })
+            }
+        </script>
+    </body>
+</html

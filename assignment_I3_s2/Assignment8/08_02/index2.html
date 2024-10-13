@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <title>Assignment07</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section id="hero">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Earum, aperiam!</p>
+        <img src="land.webp" alt="">
+        <div class="contents">
+            <div class="header">
+                <div class="his" id="his-btn">History</div>
+                <div class="vis" id="vis-btn">Vision</div>
+                <div class="go">Goals</div>
+            </div>
+            <div id="history-section" class="detail history">
+                <div class="body">
+                    <h4>History</h4>
+                    <p>I'm baby wolf picked schlitz try-hard normcore marfa man bun
+                        mumblecore vice pop-up XOXO tomo kombucha glossier bicycle rights.
+                        Umami kinfolk salvia jean short offal venmo. Knausgaard tilde try-hard,
+                        woke fixie banjo man bun. Small tumeric mustache tbh wayfarers 8-bit shaman
+                        chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly
+                        flannel tacos single-origin coffee art party migas plaid pop-up.
+                    </p>
+                </div>
+            </div>
+
+            <div id="vision-section" class="detail vision">
+                <div class="body">
+                    <h4>Vision</h4>
+                    <p>Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep
+                        v hella biodiesel. Church-key listicle polaroid put a bird on it chillwave palo
+                        santo enamel pin, tattooed meggings franzen la croix cray. Retro yr aesthetic four
+                        loko tbh helvetica air plant, neutra palo santo tofu mumblecore. Hoodie bushwick
+                        pour-over jean shorts chartreuse shabby chic. Roof party hammock master cleanse
+                        pop-up truffaut, bicycle rights skateboard affogato readymade sustainable deep v
+                        live-edge schlitz narwhal.
+                    </p>
+                    <div class="list">
+                        <span>list item</span>
+                        <span>list item</span>
+                        <span>list item</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const his = document.getElementById("his-btn");
+        const vis = document.getElementById("vis-btn");
+        const visSection = document.getElementById("vision-section");
+        const hisSection = document.getElementById("history-section");
+
+        visSection.style.display = 'none';
+        if(vis){
+            vis.addEventListener('click', () =>{
+                hisSection.style.display = 'none';
+                visSection.style.display = 'flex';
+                vis.style = "background-color: rgb(245, 245, 245)"
+                his.style = "background-color: rgb(202, 202, 202)"
+            })
+        }
+
+        if(his){
+            his.addEventListener('click', () =>{
+                hisSection.style.display = 'flex';
+                visSection.style.display = 'none';
+                his.style = "background-color: rgb(245, 245, 245)";
+                vis.style = "background-color: rgb(202, 202, 202)";
+            })
+        }
+
+        console.log(vis);
+
+        vis.addEventListener("click", function(){ 
+            hisSection.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html

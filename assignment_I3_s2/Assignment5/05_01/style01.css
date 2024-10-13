@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+}
+.parent1{
+    background: rgb(177, 177, 177);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 20px;
+}
+.child1{
+    background: orange;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent2{
+    background: rgb(177, 177, 177);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.child2{
+    background: orange;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent3{
+    margin: 20px;
+    background: rgb(177, 177, 177);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.child3{
+    background: orange;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+}
+
+.parent4{
+    margin: 20px;
+    background: rgb(177, 177, 177);
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.child4{
+    background: orange;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+
+}

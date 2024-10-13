@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab3.4</title>
+<head>
+<style>
+  table{
+        width:100%;
+        border-collapse: collapse;
+    }
+  td,th{
+    border: 2px solid #dddddd
+    text-align left;
+    padding: 8px
+}
+
+
+</style>
+</head>
+<body>
+    <h2 style="text-align: center; color: red;">Employee Registration Form</h2>
+    <form>
+    <table style width="100%">
+        <td>
+        <tr>
+            <th>
+            </th>
+            <td>
+                <label for="gender"></label>
+                <input type="radio" name="gender" id="Mr."><label value="Mr.">
+                <label for="Mr.">Mr.</label>
+                <input type="radio" name="gender" id="Mrs."><label value="Mrs.">
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" name="gender" id="Ms."><label value="Ms.">
+                <label for="Ms.">Ms.</label>
+
+            </td>
+    </td>
+    </tr>
+        <tr>
+            <th style="text-align: start; padding-left: 50px;">First Name:</th>
+            <td><input type="text" id="fname" name="fname"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Last Name:</th>
+            <td><input type="text" id="lname" name="lname"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Mail Address1:</th>
+            <td><input type="text" id="Address1" name="Address1"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Mail Address2</th>
+            <td><input type="text" id="Address2" name="Address2"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">City</th>
+            <td><input type="text" id="city" name="city"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">State</th>
+            <td>
+                <select>
+                    <option>Gujarat</option>
+                </select>
+            </td>
+          </td>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Zip</th>
+            <td><input type="text" id="Zip" name="Zip"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Upload Photo</th>
+            <td><button>Browse...</button> No selected file.</td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">E-Mail</th>
+            <td><input type="text" id="Zip" name="Zip"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Mobile</th>
+            <td><input type="text" id="Zip" name="Zip" placeholder="+91"></td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Lauguage Known</th>
+            <td><input type="checkbox">Gujarati</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><input type="checkbox">Hindi</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><input type="checkbox">English</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><input type="checkbox">Marathi</td>
+          </tr>
+          <tr>
+            <th style="text-align: start; padding-left: 50px;">Additional Information</th>
+            <td><input type="text" placeholder="Optional" style="padding-bottom: 8vh;"></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><button>submit</button> <button>reset</button></td>
+          </tr>
+          
+    </form>
+</body>

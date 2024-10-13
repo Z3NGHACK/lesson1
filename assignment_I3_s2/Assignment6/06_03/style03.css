@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+}
+body{
+    display: flex;
+}
+.parent1{
+    width: 200px;
+    height: 200px;
+    background: gray;
+    margin: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+.parent1 .child1{
+    width: 100px;
+    height: 25px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    top:15%;
+    transform: translate(-50%, -15%);
+}
+.parent1 .child2{
+    width: 25px;
+    height: 100px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.parent1 .child3{
+    width: 100px;
+    height: 25px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -15%);
+}
+.parent2{
+    width: 200px;
+    height: 200px;
+    background: gray;
+    margin: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+.parent2 .child1{
+    width: 100px;
+    height: 25px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    top:15%;
+    transform: translate(-50%, -15%);
+}
+.parent2 .child2{
+    width: 25px;
+    height: 125px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.parent3{
+    width: 200px;
+    height: 200px;
+    background: gray;
+    margin: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+.parent3 .child1{
+    width: 100px;
+    height: 25px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    top:15%;
+    transform: translate(-50%, -15%);
+}
+.parent3 .child2{
+    width: 25px;
+    height: 100px;
+    background: orange;
+    position: absolute;
+    left: 31%;
+    top: 50%;
+    transform: translate(-48%, -50%);
+}
+.parent3 .child3{
+    width: 100px;
+    height: 25px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -15%);
+}
