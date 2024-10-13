@@ -1,0 +1,77 @@
+#include<iostream>
+#include<stdlib.h>
+#include<fstream>
+using namespace std;
+int total_item, price_item, typeOfItem, quantity;
+string nameOfItem;
+float totalIncludeVAT, VAT_price, money_return, money_recieve,priceQuantity;
+void billingItem();
+void exit();
+
+void exit(){
+system("cls");
+cout << "Thank you !";
+exit(1);
+}
+
+void billingItem(){
+system("cls");
+cout << "Enter the number type of item: ";
+cin >> typeOfItem;
+for(int i =0; i < typeOfItem; i++){
+    cout << "\nEnter the name of item: "; cin >> nameOfItem;
+    cout << "Enter the quantity of item: "; cin >> quantity;
+    cout << "Enter the price of the item: ";cin >> price_item;
+    total_item +=quantity;
+    priceQuantity = quantity * price_item;
+    VAT_price = priceQuantity * 0.1;
+}
+
+    totalIncludeVAT = priceQuantity + VAT_price;
+    cout << " Total price: " << totalIncludeVAT;
+    cout << "\n\nEnter the money receive: "; cin >> money_recieve;
+    money_return = money_recieve-totalIncludeVAT;
+    ofstream billing("Billing-System.txt", ios::app);
+    system("cls");
+    cout << "\tRECIEPT!!";
+    for(int i=0; i <typeOfItem; i++){
+        cout << "\n\nName of item" <<"\t\tQuantity" << "\t\tPrice" << "\t\tTotal price.";
+        cout << endl << nameOfItem << "\t\t\t" << total_item << "\t\t\t" << price_item<<"\t\t\t"<<priceQuantity;
+    }
+    cout << "\n\nTotal: ";
+    cout << "\n--------------------------------------------------------------------\n" <<
+            "\tQuanity: " << total_item << "\tSum: " << priceQuantity << "\tWith tax: " << totalIncludeVAT<<
+            "\n--------------------------------------------------------------------"<<
+            "\n\t\t*** Payment Summary ***\n"<<
+            "\t\t money receive: " << money_recieve <<
+            "\n\t\t Total: " << totalIncludeVAT<<
+            "\n\t\t Return: "<<money_return;
+    cout << "\n\n";
+    system("pause");
+    system("cls");
+    billing.close();
+}
+int main(){
+    int choice;
+    system("cls");
+    system("color 09");
+    while(1){
+        cout << "\t*** BILLING-SYSTEM!! ***";
+        cout << "\n\n\t1. Add item."<<
+                "\n\t2. Exit"<<
+                "\n\t--> ";
+        cin >> choice;
+        switch(choice){
+        case 1:
+            billingItem();
+            break;
+        case 2:
+            exit();
+            break;
+        default:
+            cout << "\n\t\tInvalid input!\n\n";
+        }
+    }
+
+    return 0;
+}

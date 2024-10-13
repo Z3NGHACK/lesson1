@@ -1,0 +1,22 @@
+#include <graphics.h>
+int main(){
+initwindow(1000, 600);
+for(int i = 0; i<1000; i++){
+circle(50+i, 460, 40);
+circle(310+i, 460, 40);
+line(0+i, 420, 360+i, 420);
+line(0+i, 420, 0+i, 365);
+line(360+i, 420, 360+i, 365);
+line(0+i, 365, 360+i, 365);
+line(50+i, 365, 50+i, 310);
+line(310+i, 365, 310+i, 310);
+line(50+i, 310, 310+i, 310);
+line(170+i, 365, 170+i, 310);
+line(280+i, 365, 280+i, 310);
+delay(1);
+cleardevice();
+line(0, 500, 1000, 500);
+}
+
+getch();
+}

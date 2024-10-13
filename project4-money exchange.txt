@@ -1,0 +1,104 @@
+#include <iostream>
+using namespace std;
+
+
+
+int main(){
+
+string num;
+    cout << " Press any numbers to select!" << endl;
+    cout << "0. exit" << endl;
+    cout << "1. RIEL" << endl;
+    cout << "2. USD" << endl;
+    cout << "3. EUR" << endl;
+
+    cout << "Enter the currency that you have: ";
+    cin >> num;
+    int riel;
+    int usd;
+    int eur;
+    if (num=="1"){
+
+        string numR;
+        cout << "Enter the amount that you have: ";
+        cin >> riel;
+        cout << " Press any numbers to select the  exchange currency" << endl;
+        cout << "0. exit" << endl;
+        cout << "1. USD" << endl;
+        cout << "2. EUR" << endl;
+        cout << "Enter the number: ";
+        cin >> numR;
+        if(numR == "1"){
+            double exU = riel * 0.00024;
+            cout << "You exchange: " << riel << "RIEL  --> $" <<  exU;
+        } else if(numR == "2"){
+            double exE = riel * 0.00023;
+            cout << "You exchange: " << riel << "RIEL  --> " <<  exE << "EUR";
+        } else if (num == "0"){
+            cout << "THANK YOU!";
+            exit(0);
+
+    }
+
+
+    } else if (num=="2"){
+            string numU;
+            cout << "Enter the amount that you have: ";
+            cin >> usd;
+            cout << " Press any numbers to select the  exchange currency" << endl;
+            cout << "0. exit" << endl;
+            cout << "1. RIEL" << endl;
+            cout << "2. EUR" << endl;
+            cout << "Enter the number: ";
+            cin >> numU;
+
+            if(numU == "1"){
+                double exR = usd * 4100;
+                cout << "You exchange: $" << usd << " --> " <<  exR << "RIEL";
+            } else if(numU == "2"){
+                double exE = usd * 0.93;
+                cout << "You exchange: $" << usd << "  --> " <<  exE << "EUR";
+            } else if (num == "0"){
+                cout << "THANK YOU!";
+                exit(0);
+
+            }
+    } else if (num=="3"){
+            string numE;
+            cout << "Enter the amount that you have: ";
+            cin >> eur;
+            cout << " Press any numbers to select the  exchange currency" << endl;
+            cout << "0. exit" << endl;
+            cout << "1. RIEL" << endl;
+            cout << "2. USD" << endl;
+            cout << "Enter the number: ";
+            cin >> numE;
+
+            if(numE == "1"){
+                double exR = eur / 0.00024;
+                cout << "You exchange " << eur << "EUR  --> " <<  exR << "RIEL";
+            } else if(numE == "2"){
+                double exU = eur * 1.08;
+                cout << "You exchange " << eur << "EUR  --> $" <<  exU;
+
+            } else if (num == "0"){
+                cout << "THANK YOU!";
+                exit(0);
+            }
+
+        } else if (num == "0"){
+            cout << "THANK YOU!";
+            exit(0);
+
+        } else{
+            cout << "Don't understand";
+        }
+    cout << endl << "THANK YOU!";
+
+
+
+
+
+
+    return 0;
+}
